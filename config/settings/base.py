@@ -84,7 +84,8 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "houm.users",
     # Your stuff: custom apps go here
-    "houm.properties"
+    "houm.properties",
+    "houm.heartbeats"
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
