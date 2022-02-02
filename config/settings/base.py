@@ -84,6 +84,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "houm.users",
     # Your stuff: custom apps go here
+    "houm.properties"
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -328,3 +329,8 @@ SPECTACULAR_SETTINGS = {
 }
 # Your stuff...
 # ------------------------------------------------------------------------------
+# DMW
+MAP_WIDGETS = {
+    "GooglePointFieldWidget": (("zoom", 15), ("markerFitZoom", 12),),
+    "GOOGLE_MAP_API_KEY": "AIzaSyC0AK9kjHLPiUSD2JTOroQFvOULHyggNp4",
+}
