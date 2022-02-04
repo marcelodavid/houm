@@ -28,4 +28,4 @@ djangorestframework-gis==0.18.0
 # maps widgets
 django-map-widgets
 # filters
-django-filter==2.4.0
+django-filter==21.1
