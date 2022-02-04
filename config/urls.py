@@ -36,6 +36,8 @@ urlpatterns += [
         SpectacularSwaggerView.as_view(url_name="api-schema"),
         name="api-docs",
     ),
+    path("", include("houm.heartbeats.urls", namespace="heartbeats")),
+    path("", include("houm.properties.urls", namespace="properties")),
 ]
 
 if settings.DEBUG:
