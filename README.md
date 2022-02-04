@@ -67,9 +67,17 @@ Para eso empleamos el [admin](http://localhost:8000/admin/) que nos facilita Dja
 
 3. Tener en cuenta el id del usuario
 
-![Muestra Carga de Propiedad](https://github.com/marcelodavid/houm/blob/master/user_id.png?raw=true)
+![User ID](https://github.com/marcelodavid/houm/blob/master/user_id.png?raw=true)
 
 
 ### Emplear la siguiente coleccion de postman para las pruebas
 
 > Puede utilizar la colecion de postman para comenzar con las pruebas
+
+1. Obtenemos el token del Houmer
+
+![Token](https://github.com/marcelodavid/houm/blob/master/token.png?raw=true)
+
+2. Enviamos las coordenadas del houmer
+
+![Heartbeats](https://github.com/marcelodavid/houm/blob/master/heartbeat.png?raw=true)
