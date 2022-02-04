@@ -89,3 +89,7 @@ Para eso empleamos el [admin](http://localhost:8000/admin/) que nos facilita Dja
 `{{host}}/houmers/1/properties/visited/`
 
 > Puede usar los filtros fecha__gte, fecha__lte, fecha__date
+
+4. Momentos donde la velocidad supera cierto parametro
+
+![Moment](https://github.com/marcelodavid/houm/blob/master/speed.png?raw=true)
