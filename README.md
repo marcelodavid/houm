@@ -15,3 +15,35 @@ En Houm tenemos un gran equipo de Houmers que muestran las propiedades y solucio
     1. Permita que la aplicación móvil mande las coordenadas del Houmer
     2. Para un día retorne todas las coordenadas de las propiedades que visitó y cuanto tiempo se quedó en cada una
     3. Para un día retorne todos los momentos en que el houmer se trasladó con una velocidad superior a cierto parámetro
+
+Es necesario [Docker](https://get.docker.com/) para levantar los servicios.
+
+```
+curl -fsSL https://get.docker.com -o get-docker.sh
+cmod + x get-docker.sh
+sh get-docker.sh
+```
+
+[docker-compose](https://docs.docker.com/compose/install/) para componer los microservicios
+
+## Como ejecutar el codigo localmente
+### Se orquesta y contruye los microservicios, los mas importantes:
+1. Django
+2. Postgresql con PostGis
+3. Redis
+
+```bash
+export COMPOSE_FILE=loca.yml
+
+# build de los servivios
+docker-compose build
+
+# Una vez contruida todas las imagenes
+docker-compose up -d
+```
+
+### Creamos un superusuario
+```bash
+export COMPOSE_FILE=local.yml
+docker-compose run --rm django python manage.py createsuperuser
+```
