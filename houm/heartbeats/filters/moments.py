@@ -12,9 +12,8 @@ class MomentFilter(filters.FilterSet):
 
     speed__gte = filters.NumberFilter(field_name="speed", lookup_expr="gte")
     speed__lte = filters.NumberFilter(field_name="speed", lookup_expr="lte")
-    fecha__gte = filters.NumberFilter(field_name="created", lookup_expr="gte")
-    fecha__lte = filters.NumberFilter(field_name="created", lookup_expr="lte")
+    fecha__date = filters.DateFilter(field_name="created", lookup_expr="date")
 
     class Meta:
         model = Heartbeat
-        fields = ["speed__gte", "speed__lte", "fecha__gte", "fecha__lte"]
+        fields = ["speed__gte", "speed__lte", "fecha__date"]
