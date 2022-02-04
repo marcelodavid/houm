@@ -81,3 +81,11 @@ Para eso empleamos el [admin](http://localhost:8000/admin/) que nos facilita Dja
 2. Enviamos las coordenadas del houmer
 
 ![Heartbeats](https://github.com/marcelodavid/houm/blob/master/heartbeat.png?raw=true)
+
+3. Ver las propiedades visitadas
+
+![Muestra Carga de Propiedad](https://github.com/marcelodavid/houm/blob/master/visitados.png?raw=true)
+
+`{{host}}/houmers/1/properties/visited/`
+
+> Puede usar los filtros fecha__gte, fecha__lte, fecha__date
