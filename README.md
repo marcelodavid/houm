@@ -60,5 +60,16 @@ Para eso empleamos el [admin](http://localhost:8000/admin/) que nos facilita Dja
 1. Registramos las propiedades
 
 ![Muestra Carga de Propiedad](https://github.com/marcelodavid/houm/blob/master/propiedad.png?raw=true)
-prop
+
+2. Registrar houmers
+
+![Muestra Carga de Houmers](https://github.com/marcelodavid/houm/blob/master/user.png?raw=true)
+
+3. Tener en cuenta el id del usuario
+
+![Muestra Carga de Propiedad](https://github.com/marcelodavid/houm/blob/master/user_id.png?raw=true)
+
+
+### Emplear la siguiente coleccion de postman para las pruebas
+
 > Puede utilizar la colecion de postman para comenzar con las pruebas
