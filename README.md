@@ -47,3 +47,18 @@ docker-compose up -d
 export COMPOSE_FILE=local.yml
 docker-compose run --rm django python manage.py createsuperuser
 ```
+
+### Ver el estado de los servicios
+```
+docker-compose ps
+```
+## Pruebas
+
+Lo necesario para probar las APIs son las propiedades que recorren los houmers y la creacion de houmers.
+Para eso empleamos el [admin](http://localhost:8000/admin/) que nos facilita Django
+
+1. Registramos las propiedades
+
+![Muestra Carga de Propiedad](https://github.com/marcelodavid/houm/blob/master/propiedad.png?raw=true)
+prop
+> Puede utilizar la colecion de postman para comenzar con las pruebas

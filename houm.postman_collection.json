@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "9d3645f4-a1b2-4946-8b15-dd9ff51bceba",
+		"name": "metrics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "send heartbeats",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lat\":  -25.268876, \n    \"lng\": -57.570909\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/houmers/1/heartbeats/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"houmers",
+						"1",
+						"heartbeats",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login houmer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"marceaagg@gmail.com\",\n    \"password\": \"facilito\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/auth-token/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"auth-token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "visited properties",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/houmers/1/properties/visited/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"houmers",
+						"1",
+						"properties",
+						"visited",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "moment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/houmers/1/moments/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"houmers",
+						"1",
+						"moments",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
